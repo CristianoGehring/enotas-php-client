@@ -52,7 +52,7 @@
 		}
 
 		public function decode($encodedData) {
-			throw new Exception('This method is not supported');
+			throw new \Exception('This method is not supported');
 		}
 	}
 ?>

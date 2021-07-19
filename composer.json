@@ -1,5 +1,5 @@
 {
-    "name": "enotas/php-client",
+    "name": "artemidas/enotas-php-client",
     "description": "eNotas GW API client for PHP",
     "keywords": ["eNotas", "NFS-e"],
     "homepage": "https://github.com/eNotasGW/php-client",
