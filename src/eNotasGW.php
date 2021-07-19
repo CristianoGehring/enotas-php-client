@@ -1,14 +1,14 @@
 <?php
 	namespace eNotasGW\Api; 
 	
-	require('helper.php');
+	require('Helper.php');
 	
-	require('exceptions/requestException.php');
-	require('exceptions/apiException.php');
-	require('exceptions/invalidApiKeyException.php');
-	require('exceptions/unauthorizedException.php');
+	require('Exceptions/requestException.php');
+	require('Exceptions/apiException.php');
+	require('Exceptions/invalidApiKeyException.php');
+	require('Exceptions/unauthorizedException.php');
 
-	require('apiBase.php');
+	require('ApiBase.php');
 	require('nfeApi.php');
 	require('empresaApi.php');
 	require('prefeituraApi.php');
@@ -18,12 +18,12 @@
 	require('request.php');
 	require('response.php');
 
-	require('proxy/proxyBase.php');
-	require('proxy/curlProxy.php');
+	require('Proxy/proxyBase.php');
+	require('Proxy/curlProxy.php');
 
-	require('media/formatters/formatterBase.php');
-	require('media/formatters/jsonFormatter.php');
-	require('media/formatters/formDataFormatter.php');
+	require('Media/Formatters/formatterBase.php');
+	require('Media/Formatters/jsonFormatter.php');
+	require('Media/Formatters/formDataFormatter.php');
 
 	use eNotasGW\Api as api;
 	use eNotasGW\Api\Proxy as proxy;
@@ -53,7 +53,7 @@
 			);
 
 			if(!isset($config->apiKey)) {
-				throw new Exception('A api key deve ser definida no método configure.');
+				throw new \Exception('A api key deve ser definida no método configure.');
 			}
 
 			self::$_apiKey = $config->apiKey;
@@ -74,7 +74,7 @@
 				self::$_trustedCAListPath = $config->_trustedCAListPath;
 			}
 			else {
-				self::$_trustedCAListPath = dirname(__FILE__) . '/files/ca-bundle.crt';
+				self::$_trustedCAListPath = dirname(__FILE__) . '/Files/ca-bundle.crt';
 			}
 
 			self::$_versionedBaseUrl = self::$_baseUrl . '/v' . self::$_version;

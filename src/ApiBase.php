@@ -1,7 +1,7 @@
 <?php
 	namespace eNotasGW\Api;
 
-	class eNotasGWApiBase {
+	class ApiBase {
 		protected $proxy;
 
 		public function __construct($proxy) {

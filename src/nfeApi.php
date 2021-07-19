@@ -1,7 +1,7 @@
 <?php
 	namespace eNotasGW\Api;
 
-	class nfeApi extends eNotasGWApiBase {
+	class nfeApi extends ApiBase {
 		public function __construct($proxy) {
 			parent::__construct($proxy);
 		}
@@ -119,8 +119,8 @@
 		* @return searchResult	$listaNFe retorna uma lista contendo os registros encontrados na pesquisa
 		*/
 		public function consultarPorPeriodo($idEmpresa, $pageNumber, $pageSize, $dataInicial, $dataFinal) {
-			$dataInicial = eNotasGWHelper::formatDateTime($dataInicial);
-			$dataFinal = eNotasGWHelper::formatDateTime($dataFinal);
+			$dataInicial = Helper::formatDateTime($dataInicial);
+			$dataFinal = Helper::formatDateTime($dataFinal);
 		
 			return $this->callOperation(array(
 				'path' => '/empresas/{empresaId}/nfes',

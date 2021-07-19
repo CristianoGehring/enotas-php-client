@@ -1,7 +1,7 @@
 <?php
 	namespace eNotasGW\Api;
 
-	class eNotasGWHelper {
+	class Helper {
 		public static function formatDate($date) {
 			return $date->format('Y-m-d');
 		}

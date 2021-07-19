@@ -1,7 +1,7 @@
 <?php
 	namespace eNotasGW\Api;
 
-	class servicosMunicipaisApi extends eNotasGWApiBase {
+	class servicosMunicipaisApi extends ApiBase {
 		public function __construct($proxy) {
 			parent::__construct($proxy);
 		}
