@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api\Proxy;
+	namespace eNotas\Api\Proxy;
 
 	class curlProxy extends proxyBase {
 		public function __construct($executionCtx) {
@@ -39,7 +39,7 @@
 			$ch = curl_init();
 			curl_setopt_array($ch, $options);
 
-			$response = new \eNotasGW\Api\response();
+			$response = new \eNotas\Api\response();
 			$response->body = curl_exec($ch);
 			$response->contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
 			$response->code = curl_getinfo($ch, CURLINFO_HTTP_CODE);

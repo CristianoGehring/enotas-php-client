@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api;
+	namespace eNotas\Api;
 
 	class request {
 		/**
@@ -63,7 +63,7 @@
 
 		public function encodeRequestParameters() {
 			$contentType = $this->contentType;
-			$formatter = eNotasGW::getMediaFormatter($contentType);
+			$formatter = eNotas::getMediaFormatter($contentType);
 
 			if($formatter !== FALSE) {
 				$result = $formatter->encode($this->parameters, $contentType);

@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api;
+	namespace eNotas\Api;
 
 	class empresaApi extends ApiBase {
 		public function __construct($proxy) {

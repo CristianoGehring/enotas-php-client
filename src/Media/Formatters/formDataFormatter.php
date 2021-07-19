@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api\Media\Formatters;
+	namespace eNotas\Api\Media\Formatters;
 
 	class formDataFormatter extends formatterBase {
 		private static $_notAllowedChars = array("\0", "\"", "\r", "\n");
@@ -14,7 +14,7 @@
 				$name = $this->removeNotAllowedChars($name);
 				$body[] = "--" . $boundary;
 				
-				if(is_a($value, 'eNotasGW\Api\fileParameter')) {
+				if(is_a($value, 'eNotas\Api\fileParameter')) {
 					$this->appendFileParameter($name, $value, $body);   
 				}
 				else {

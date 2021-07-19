@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api\Media\Formatters;
+	namespace eNotas\Api\Media\Formatters;
 
 	class jsonFormatter extends formatterBase {
 		public function encode($objData, &$contentType) {

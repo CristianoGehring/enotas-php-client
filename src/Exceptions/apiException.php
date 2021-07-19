@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api\Exceptions;
+	namespace eNotas\Api\Exceptions;
 	
 	use \Exception as Exception;
 	

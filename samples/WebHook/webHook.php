@@ -1,7 +1,7 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');	
 	
-	require('..\..\src\eNotasGW.php');
+	require('..\..\src\eNotas.php');
 	
 	function handleException($ex) {
 		//reportar que houve erro no processamento da notificação

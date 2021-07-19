@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api;
+	namespace eNotas\Api;
 
 	class fileParameter {
 		public static function fromPath($path, $contentType, $fileName) {

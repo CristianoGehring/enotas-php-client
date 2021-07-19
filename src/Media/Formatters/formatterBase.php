@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api\Media\Formatters;
+	namespace eNotas\Api\Media\Formatters;
 
 	abstract class formatterBase {
 		abstract public function encode($objData, &$contentType);

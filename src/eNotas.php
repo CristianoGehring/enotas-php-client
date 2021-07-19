@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api; 
+	namespace eNotas\Api;
 	
 	require('Helper.php');
 	
@@ -25,11 +25,11 @@
 	require('Media/Formatters/jsonFormatter.php');
 	require('Media/Formatters/formDataFormatter.php');
 
-	use eNotasGW\Api as api;
-	use eNotasGW\Api\Proxy as proxy;
-	use eNotasGW\Api\Media\Formatters as formatters;  
+	use eNotas\Api as api;
+	use eNotas\Api\Proxy as proxy;
+	use eNotas\Api\Media\Formatters as formatters;  
 
-	class eNotasGW {
+	class eNotas {
 		private static $_apiKey;
 		private static $_defaultContentType = 'application/json';
 		private static $_baseUrl = 'http://api.enotasgw.com.br';

@@ -1,8 +1,8 @@
 <?php
-	namespace eNotasGW\Api\Proxy;
+	namespace eNotas\Api\Proxy;
 	
 	use \Exception as Exception;
-	use eNotasGW\Api\Exceptions as Exceptions;
+	use eNotas\Api\Exceptions as Exceptions;
 	
 	abstract class proxyBase {
 		public $executionCtx;
@@ -37,7 +37,7 @@
 			$executionCtx = $this->executionCtx;
 			$decodeResponse = (isset($operation->decodeResponse) ? $operation->decodeResponse : TRUE);
 
-			$request = new \eNotasGW\Api\request();
+			$request = new \eNotas\Api\request();
 			$request->url = $this->buildUrl($operation);
 
 			if(!empty($operation->method)) {

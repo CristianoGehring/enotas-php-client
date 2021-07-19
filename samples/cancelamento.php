@@ -1,8 +1,8 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');
 	
-	require('../src/eNotasGW.php');
-	
+	require('../src/eNotas.php');
+
 	use eNotasGW\Api\Exceptions as Exceptions;
 
 	eNotasGW::configure(array(

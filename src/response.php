@@ -1,5 +1,5 @@
 <?php
-	namespace eNotasGW\Api;
+	namespace eNotas\Api;
 	
 	class response {
 		/**
@@ -40,7 +40,7 @@
 		}
 
 		private function decodeResponse() {
-			$formatter = eNotasGW::getMediaFormatter($this->contentType);
+			$formatter = eNotas::getMediaFormatter($this->contentType);
 			
 			return $formatter->decode($this->body);
 		}
